@@ -14,6 +14,7 @@ void setup() {
 }
 
 void loop() {
+
   bt.write(thisByte);
   bt.print(", dec: ");
   bt.print(thisByte);
@@ -28,6 +29,10 @@ void loop() {
     thisByte = 32;
   }
   thisByte++;
+
+
+
+//test
 
  if(!BaroSensor.isOK()) {
     Serial.print("Sensor not Found/OK. Error: "); 
